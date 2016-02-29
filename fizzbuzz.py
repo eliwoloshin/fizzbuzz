@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Eli Woloshin
+Credit: my brain
 
 Assignment:
 
@@ -44,21 +44,17 @@ Fizz
 Fizz
 Buzz
 """
-from ggame import App, RectangleAsset, ImageAsset, SoundAsset
-from ggame import LineStyle, Color, Sprite, Sound
-
-myapp = App()
-myapp.run()
-
-SCREEN_WIDTH = 640
-SCREEN_HEIGHT = 480
-
-green = Color(0x00ff00, 1)
-black = Color(0, 1)
-noline = LineStyle(0, black)
-bg_asset = RectangleAsset(SCREEN_WIDTH, SCREEN_HEIGHT, noline, green)
-bg = Sprite(bg_asset, (0,0))
+number = int(input("How many numbers shall we print? "))
+fizz = int(input("For multiples of what number shall we print 'Fizz'? "))
+buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
 
 
-for x in range(100)
-    print
+
+for x in range(number+1):
+    print(x)
+    if x%fizz == 0:
+        print("Fizz")
+    if x%buzz == 0:
+        print("Buzz")
+
+
