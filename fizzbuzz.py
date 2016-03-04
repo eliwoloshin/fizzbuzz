@@ -50,11 +50,14 @@ buzz = int(input("For multiples of what number shall we print 'Buzz'? "))
 
 
 
-for x in range(number+1):
-    print(x)
+for x in range(1,number+1):
     if x%fizz == 0:
         print("Fizz")
-    if x%buzz == 0:
+    elif x%buzz == 0:
         print("Buzz")
+    elif x%fizz == 0 and x%buzz == 0:
+        print("FizzBuzz")
+    else:
+        print(x)
 
 
